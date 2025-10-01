@@ -1,4 +1,5 @@
 # TypeScript
+<li><a href="https://codewithnini.hashnode.dev/typescript">Click Here to Visit TypeScript Blog</a></li>
 
 # Commands
 
