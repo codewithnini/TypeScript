@@ -11,7 +11,10 @@
 
 // Each variable declaration is followed by a comment explaining its purpose.
 let age: number = 25.;  // Declaring a variable 'age' of type number and initializing it with the value 25.
-let name: string = "Nini"; // Declaring a variable 'name' of type string and initializing it with the value "Nini".
+// in JavaScript/TypeScript running in the browser, name is already a built-in global variable (it usually refers to the window’s name or form element name).
+// // However, in Node.js environment, name is not a predefined global variable, so it can be used without any issues.
+// To avoid potential conflicts, it's a good practice to use unique variable names that do not clash with global variables.
+let userName: string = "Nini"; // Declaring a variable 'userName' of type string and initializing it with the value "Nini".
 let isAdmin: boolean = true; // Declaring a variable 'isAdmin' of type boolean and initializing it with the value true.
 let x: null = null; // Declaring a variable 'x' of type null and initializing it with the value null.
 let y: undefined = undefined; // Declaring a variable 'y' of type undefined and initializing it with the value undefined.
@@ -25,7 +28,7 @@ let sym: symbol = Symbol("id"); // Declaring a variable 'sym' of type symbol and
 // Each variable is logged to the console to show its value.
 // The console.log function is used to print the values to the console.
 console.log(age); // Displaying the value of the variable 'age'
-console.log(name); // Displaying the value of the variable 'name'
+console.log(userName); // Displaying the value of the variable 'name'
 console.log(isAdmin); // Displaying the value of the variable 'isAdmin'
 console.log(x); // Displaying the value of the variable 'x'
 console.log(y); // Displaying the value of the variable 'y'
@@ -35,7 +38,7 @@ console.log(sym); // Displaying the value of the variable 'sym'
 // ====================================================================================================================
 // Displaying the types of the variables using typeof operator
 console.log(typeof age); // number
-console.log(typeof name); // string
+console.log(typeof userName); // string
 console.log(typeof isAdmin); // boolean
 console.log(typeof x); // object
 console.log(typeof y); // undefined
@@ -47,7 +50,7 @@ console.log(typeof sym); // symbol
 
 // ====================================================================================================================
 // Using template literals to format the output and display all variables in one line .
-console.log( `Age: ${age},Name: ${name}, Admin: ${isAdmin},nothing:${x}, notIdentify :${y},bigest:${big}, icon:${sym.toString}`);
+console.log( `Age: ${age},Name: ${userName}, Admin: ${isAdmin},nothing:${x}, notIdentify :${y},bigest:${big}, icon:${sym.toString}`);
 
 // Template literals are enclosed by backticks (` `) and can contain placeholders indicated by ${expression}.
 // This allows for easier string interpolation and multi-line strings.
